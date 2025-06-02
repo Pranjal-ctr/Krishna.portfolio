@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Animator Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: white;
+    }
+    header {
+      background: #000;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      color: white;
+      text-decoration: none;
+    }
+    .hero {
+      position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: #111; /* fallback */
+    }
+    .hero video {
+        position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    opacity: 0.15; /* adjust this for transparency */
+    z-index: 0;
+    pointer-events: none;
+    }
+    .hero .content {
+       position: relative;
+    z-index: 1;
+    color: white;
+    padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 4rem 2rem;
+      background: #1a1a1a;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+    .projects, .about, .contact {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .project {
+      width: 300px;
+      background: #222;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .project video {
+      width: 100%;
+    }
+    .project .info {
+      padding: 1rem;
+    }
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact input, .contact textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      padding: 0.75rem;
+      background-color: rgb(88, 157, 247);
+      border: none;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+ 
+    
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+    }
+    .button {
+        margin: 12px;
+        padding: 5px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #29222c;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #473b4b;
+  transform: translateY(-2px);
+}
+.contact-info {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: #88c0ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Krishna Kumar</h1>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+  <video autoplay muted loop playsinline class="background-video">
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="content">
+    <h1>Krishna Kumar</h1>
+    <p>2D / 3D Animator | Spine · AE · Photoshop</p>
+    <a href="CV Resume.pdf" class="button" target="_blank">Open Resume</a>
+  </div>
+</section>
+
+
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <video autoplay muted loop playsinline>
+          <source src="reel.mp4" type="video/mp4">
+        </video>
+        <div class="info">
+          <h3>Slot Game Animation</h3>
+          <p>Role: 2D Animator · Tools: Spine, Photoshop</p>
+        </div>
+      </div>
+      <div class="project">
+        <video autoplay muted loop playsinline>
+          <source src="new.mp4" type="video/mp4">
+        </video>
+        <div class="info">
+          <h3>Rooster Symbol Win Animation</h3>
+          <p>Tools: Spine, Adobe Photoshop</p>
+        </div>
+      </div>
+      <div class="project">
+        <video autoplay muted loop playsinline>
+          <source src="symbol.mp4" type="video/mp4">
+        </video>
+        <div class="info">
+          <h3>Bundle of Notes - Symbol Animation</h3>
+          <p> Tools: Spine, Adobe Photoshop</p>
+        </div>
+      </div>
+       <div class="project">
+        <video autoplay muted loop playsinline>
+          <source src="reel.mp4" type="video/mp4">
+        </video>
+        <div class="info">
+          <h3>Character Animation - Symbol</h3>
+          <p> Tools: Spine, Adobe Photoshop</p>
+        </div>
+      </div>
+      <div class="project">
+        <video autoplay muted loop playsinline>
+          <source src="Room.mp4" type="video/mp4">
+        </video>
+        <div class="info">
+          <h3>Room Setup Animation</h3>
+          <p>Tools: Spine, Adobe Photoshop</p>
+        </div>
+      </div>
+      <div class="project">
+        <video autoplay muted loop playsinline>
+          <source src="testt.mp4" type="video/mp4">
+        </video>
+        <div class="info">
+          <h3>Showreel</h3>
+          <p>Role: 2D Animator · Tools: Spine, Photoshop</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>
+        I'm a passionate 2D/3D Animator with experience in remote game design and animation.
+        I specialize in Spine, After Effects, Blender, and Photoshop. I've worked on various
+        slot and casino games, always delivering high-quality and optimized animations on time.
+      </p>
+      
+      <p> <br>
+        Creative and detail-oriented 2D Animator with over a decade of experience in the animation industry, specializing in slot and casino games, e-learning content, and mobile applications. 
+        Proven ability to deliver high-quality animations with minimal revisions and optimal game performance. Skilled in collaborating with international teams, managing animation projects, and guiding junior talent. Offering a strong blend of technical animation expertise and creative problem-solving abilities. Recognized as 'Best Artist of the Year' three times at ZVKY Design Studio. Strong communication with leads and producers, and consistent in meeting tight deadlines.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="contact">
+     
+    </div>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:">sahanik201@gmail.com
+      <p><strong>Phone:</strong> <a href="tel:+919601168084">+91 9601168084</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/krishna-kumar-6a3916129/" target="_blank">linkedin.com/in/krishna-kumar</a></p>
+    </div>
+    </div>
+  </div>
+  </section>
+
+  <footer>
+    <p>© 2025 
+        Krishna Kumar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
