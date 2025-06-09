@@ -146,7 +146,7 @@
         padding: 5px;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #29222c;
+    background-color: #3a4644;
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
@@ -159,7 +159,7 @@
 }
 
 .button:hover {
-  background-color: #473b4b;
+  background-color: #5d6b79;
   transform: translateY(-2px);
 }
 .contact-info {
