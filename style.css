@@ -45,7 +45,7 @@
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
-    opacity: 0.15; /* adjust this for transparency */
+    opacity: 0.5; /* adjust this for transparency */
     z-index: 0;
     pointer-events: none;
     }
@@ -340,4 +340,5 @@ html {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
 
