@@ -1,276 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krishna | 2D Animator Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Kumar | 2D / 3D Animator Portfolio</title>
+  <link rel="stylesheet" href="style1.css" />
+  <!-- Optional: Favicon -->
+  <!-- <link rel="icon" type="image/png" href="favicon.png" /> -->
 </head>
 <body>
-  <header>
-    <h1>Krishna Kumar </h1>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo" >
+        <span class="logo-name">Krishna Kumar</span>
+        <span class="logo-tagline" >2D / 3D Animator</span>
+      </div>
 
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    
- 
-    <nav>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      
-      
-    </nav>
+      <nav class="nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-  <video autoplay muted loop playsinline class="background-video">
-    <source src="video/bg1.mp4" type="video/mp4">
-  </video>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="video/bg1.mp4" type="video/mp4" />
+    </video>
 
-  <div class="content">
-    <h1></h1>
-    <section id="photo" class="photo-section">
-  <div class="photo-wrapper">
-    <img src="/Krishna.png" alt="Krishna " class="profile-photo" />
-    <div class="photo-info">
-      <h2>Krishna Kumar </h2>
-       <p><u><strong>2D / 3D Animator | Expert in - Spine  · Maya  · AE · Photoshop </strong></u></p>
-       <ul> <a href="/CV.pdf" class="button" target="_blank">Open Resume</a> </ul>
-      <ul><a href="#projects" class="button">Projects</a> </ul>
-  
-</section>
-   
-   
-</section>
- <section id="experience"> <br>
-  
-  <h2 class="section-title">Work Experience</h2>
-  <div class="info-grid">
-    
-    <div class="column">
-      <h3>ZVKY Design Studio <span style="font-weight: normal;">(2020 – Present)</span></h3>
-      <ul>
-        <li>Senior 2D Animator specializing in slot and casino games using Spine, Photoshop, and After Effects.</li>
-        <li>Delivered high-quality animations with minimal revisions and optimal performance.</li>
-        
-        <li>Maintained clear communication with producers and team leads.</li>
-        <li>Awarded <strong>'Best Artist of the Year'</strong> three times for excellence.</li>
-        <li>Worked with global clients: <strong> Aristocrat, Isoftbet, Big Run Studios, CrowdPlay, Four Leaf Gaming, Play'n GO, SEGA Sammy Creations and more. </strong></li>
-      </ul>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-label">2D / 3D Animator · Slot & Casino Games</p>
+        <h1>Bringing characters and game worlds to life.</h1>
+        <p class="hero-subtitle">
+          Senior 2D Animator with 10+ years of experience crafting high-quality animations
+          for slots, casino games, and interactive content. Specialized in Spine, Maya,
+          After Effects, and Photoshop.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="CV.pdf" target="_blank" class="button primary">Download Resume</a>
+          <a href="#projects" class="button secondary">View Showreel & Projects</a>
+        </div>
+
+        <div class="hero-tools">
+          <span>Spine</span>
+          <span>Autodesk Maya</span>
+          <span>After Effects</span>
+          <span>Photoshop</span>
+        </div>
+      </div>
+
+      <div class="hero-photo-card">
+        <img src="Krishna.png" alt="Krishna Kumar - Animator" class="profile-photo" />
+        <div class="hero-photo-info">
+          <h2>Krishna Kumar</h2>
+          <p>Senior 2D Animator · Spine Specialist</p>
+          <p class="hero-award">
+            🏆 3× "Best Artist of the Year" · ZVKY Design Studio
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="column">
-      <h3>Freelance Animator <span style="font-weight: normal;">(2017 – 2020)</span></h3>
-      <ul>
-        <li>Produced animated e-learning videos and rhymes for Smiles International.</li>
-        <li>Handled complete animation pipeline from concept to final delivery.</li>
-      </ul>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <p class="section-intro">
+        A decade of experience in game animation, mobile games, and e-learning content,
+        collaborating with global studios and brands.
+      </p>
 
-      <h3>Arthisoft Gaming Studio <span style="font-weight: normal;">(2011 – 2017)</span></h3>
-      <ul>
-        <li>Developed 2D & 3D animations for over 30 mobile games.</li>
-        <li>Built custom rigs for 3D characters and implemented facial expressions, lip-sync, and body mechanics.</li>
-        <li>Collaborated with production teams to meet tight deadlines and maintain high-quality standards.</li>
-      </ul>
+      <div class="info-grid">
+        <div class="column">
+          <h3>ZVKY Design Studio <span class="duration">(2020 – Present)</span></h3>
+          <p class="role">Senior 2D Animator · Slot & Casino Games</p>
+          <ul>
+            <li>Specialize in slot and casino animations using Spine, Photoshop, and After Effects.</li>
+            <li>Deliver high-quality, optimized animations with minimal revisions.</li>
+            <li>Maintain clear communication with producers, art leads, and developers.</li>
+            <li>Awarded <strong>'Best Artist of the Year'</strong> three times.</li>
+            <li>
+              Worked with global clients:
+              <strong>
+                Aristocrat, Isoftbet, Big Run Studios, CrowdPlay, Four Leaf Gaming, Play'n GO,
+                SEGA Sammy Creations, and more.
+              </strong>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h3>Freelance Animator <span class="duration">(2017 – 2020)</span></h3>
+          <p class="role">2D Animator · E-learning & Rhymes</p>
+          <ul>
+            <li>Produced animated e-learning videos and rhymes for Smiles International.</li>
+            <li>Handled complete animation pipeline from concept to final delivery.</li>
+          </ul>
+
+          <h3>Arthisoft Gaming Studio <span class="duration">(2011 – 2017)</span></h3>
+          <p class="role">2D / 3D Animator · Mobile Games</p>
+          <ul>
+            <li>Developed 2D & 3D animations for over 30 mobile games.</li>
+            <li>Created custom rigs for 3D characters, including facial expressions and lip-sync.</li>
+            <li>Collaborated with production teams to meet tight deadlines with consistent quality.</li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-
-
-
+  <!-- Projects / Showreel Section -->
   <section id="projects" class="section">
-  <h2>Featured Projects</h2>
-  <div class="projects">
-    
-    <div class="project">
-      <video id="video1" autoplay muted loop playsinline preload="auto">
-        <source src="/video/reel.mp4" type="video/mp4">
-      </video>
-     <div class="info">
-        <h3>Slot Character Animation - Isoftbet</h3>
-       <p>I was responsible for creating the characters and symbol animations for this iSoftBet slot game, which is now live. The animation was praised for its expressive quality and emotional appeal, especially in bringing the character to life. I received appreciation within the team for crafting smooth, engaging animations that enhanced the overall player experience.</p> <p><strong>Role:</strong> 2D Animator</p> <p><strong>Tools:</strong> Spine, Photoshop</p>
+    <div class="container">
+      <h2 class="section-title">Featured Projects & Showreel</h2>
+      <p class="section-intro">
+        A selection of my work in slot games, character animation, UI transitions,
+        and environment setups.
+      </p>
+
+      <div class="projects">
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/reel.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Slot Character Animation – iSoftBet</h3>
+            <p>
+              Responsible for character and symbol animations for a live iSoftBet slot game. The
+              animation was praised for expressive performance and emotional appeal.
+            </p>
+            <p><strong>Role:</strong> 2D Animator</p>
+            <p><strong>Tools:</strong> Spine, Photoshop</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/Magical_fox.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Magical Fox Animation Test</h3>
+            <p>
+              Test animation created for a AAA studio. Focus on smooth movement, expressive timing,
+              and stylized FX for a magical creature.
+            </p>
+            <p><strong>Role:</strong> 2D Animator</p>
+            <p><strong>Tools:</strong> Spine, Photoshop</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/cards.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Slot Game Cards – Alternate Animation</h3>
+            <p>Alternative card animations designed for slot gameplay feedback and win moments.</p>
+            <p><strong>Tools:</strong> Spine, Photoshop</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/cardsall.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Slot Game Cards Animation Set</h3>
+            <p>Full card set animation covering idle, win, and special FX states.</p>
+            <p><strong>Tools:</strong> Spine, Photoshop</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/logo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Slot Game Logo Outro Animation</h3>
+            <p>Dynamic outro animation for slot game branding and session end screens.</p>
+            <p><strong>Tools:</strong> Spine, Photoshop</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/logo-loop.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Slot Game Logo Loop Animation</h3>
+            <p>Seamless loop animation to keep lobby and loading screens visually engaging.</p>
+            <p><strong>Tools:</strong> Spine, Photoshop</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/new.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Rooster Symbol Win Animation</h3>
+            <p>Win animation with strong anticipation and follow-through for slot symbol feedback.</p>
+            <p><strong>Role:</strong> 2D Animator · Tools: Spine, Photoshop</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/testt.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Showreel</h3>
+            <p>Compilation of selected slot, character, and UI animation work.</p>
+            <p><strong>Role:</strong> 2D Animator · Tools: Spine, Photoshop</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/Room.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Room Setup Animation</h3>
+            <p>Animated room environment setup for interactive scene transitions.</p>
+            <p><strong>Tools:</strong> Spine, Photoshop</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <video autoplay muted loop playsinline preload="auto">
+              <source src="video/room2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="project-info">
+            <h3>Villa Setup Animation</h3>
+            <p>Environment animation for a villa scene with layered depth and subtle motion.</p>
+            <p><strong>Tools:</strong> Spine, Photoshop</p>
+          </div>
+        </article>
       </div>
     </div>
+  </section>
 
-      
-    
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Tools & Skills</h2>
+      <p class="section-intro">
+        A blend of technical animation skills and soft skills that ensure smooth production and
+        high-quality delivery.
+      </p>
 
-    <div class="project">
-      <video id="video1" autoplay muted loop playsinline preload="auto">
-        <source src="/video/Magical_fox.mp4" type="video/mp4">
-      </video>
-      <div class="info">
-        <h3>Magical Fox Animation Test</h3>
-        <p>Created a 2D animation of a magical fox using Spine for a AAA studio test. Focused on smooth movement, expressive timing, and fantasy-style visual effects. <ul><Strong></Strong> Tools </Strong>: Spine, Photoshop </ul></p>
+      <div class="skills-grid">
+        <span class="skill-badge">Spine 2D</span>
+        <span class="skill-badge">Autodesk Maya</span>
+        <span class="skill-badge">After Effects</span>
+        <span class="skill-badge">Photoshop</span>
+        <span class="skill-badge">Illustrator</span>
+        <span class="skill-badge">CorelDRAW</span>
+        <span class="skill-badge">2D Character Animation</span>
+        <span class="skill-badge">Slot & Casino Animation</span>
+        <span class="skill-badge">Rigging</span>
+        <span class="skill-badge">Lip-sync & Facial Animation</span>
+        <span class="skill-badge">Teamwork</span>
+        <span class="skill-badge">Time Management</span>
+        <span class="skill-badge">Problem Solving</span>
+        <span class="skill-badge">Communication</span>
       </div>
     </div>
+  </section>
 
-    
-
-   
-     <div class="project">
-      <video id="video2" autoplay muted loop playsinline preload="auto">
-        <source src="/video/cards.mp4" type="video/mp4">
-      </video>
-      <div class="info">
-        <h3>Slot Game cards alternate Animation</h3>
-        <p>Tools: Spine, Adobe Photoshop</p>
-      </div>
-    </div>
-
-
-    <div class="project">
-      <video id="video2" autoplay muted loop playsinline preload="auto">
-        <source src="/video/cardsall.mp4" type="video/mp4">
-      </video>
-      <div class="info">
-        <h3>Slot Game cards Animation</h3>
-        <p>Tools: Spine, Adobe Photoshop</p>
-      </div>
-    </div>
-
-    <div class="project">
-      <video id="video2" autoplay muted loop playsinline preload="auto">
-        <source src="/video/logo.mp4" type="video/mp4">
-      </video>
-      <div class="info">
-        <h3>Slot Game Logo Outro Animation</h3>
-        <p>Tools: Spine, Adobe Photoshop</p>
-      </div>
-    </div>
-    <div class="project">
-      <video id="video2" autoplay muted loop playsinline preload="auto">
-        <source src="/video/logo-loop.mp4" type="video/mp4">
-      </video>
-      <div class="info">
-        <h3>Slot Game Logo loop Animation</h3>
-        <p>Tools: Spine, Adobe Photoshop</p>
-      </div>
-    </div>
-
-    <div class="project">
-      <video id="video6" autoplay muted loop playsinline preload="auto">
-        <source src="/video/new.mp4" type="video/mp4">
-      </video>
-      <div class="info">
-        <h3>Rooster Symbol Win Animation</h3>
-        <p>Role: 2D Animator · Tools: Spine, Photoshop</p>
-      </div>
-    </div>
-
-        <div class="project">
-      <video id="video9"  autoplay muted loop playsinline  preload="auto"> 
-        <source src="/video/testt.mp4" type="video/mp4">
-      </video>
-      <div class="info">
-        <h3>Showreel</h3>
-        <p>Role: 2D Animator · Tools: Spine, Photoshop</p>
-      </div>
-    </div>
-
-    <div class="project">
-      <video id="video7" autoplay muted loop playsinline preload="auto">
-        <source src="/video/Room.mp4" type="video/mp4">
-      </video>
-      <div class="info">
-        <h3>Room Setup Animation</h3>
-        <p>Role: 2D Animator · Tools: Spine, Photoshop</p>
-      </div>
-    </div>
-
-    <div class="project">
-      <video id="video8" autoplay muted loop playsinline  preload="auto">
-        <source src="/video/room2.mp4" type="video/mp4">
-      </video>
-      <div class="info">
-        <h3>Villa Setup Animation</h3>
-        <p>Tools: Spine, Adobe Photoshop</p>
-      </div>
-    </div>
-
-
-
-    
-
-  </div>
-</section>
-
-
+  <!-- About Section -->
   <section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="about">
-      <p>
-        I'm a passionate 2D/3D Animator with experience in remote game design and animation.
-        I specialize in Spine, After Effects, Blender, and Photoshop. I've worked on various
-        slot and casino games, always delivering high-quality and optimized animations on time.
-      </p>
-      
-      <p> <br>
-        Creative and detail-oriented 2D Animator with over a decade of experience in the animation industry, specializing in slot and casino games, e-learning content, and mobile applications. 
-        Proven ability to deliver high-quality animations with minimal revisions and optimal game performance. Skilled in collaborating with international teams, managing animation projects, and guiding junior talent. Offering a strong blend of technical animation expertise and creative problem-solving abilities. Recognized as 'Best Artist of the Year' three times at ZVKY Design Studio. Strong communication with leads and producers, and consistent in meeting tight deadlines.
-      </p>
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about">
+        <p>
+          I’m a passionate 2D/3D Animator with extensive experience in game design, slot and casino
+          animations, and e-learning content. I specialize in Spine, After Effects, Maya, and
+          Photoshop, focusing on expressive, optimized animation that feels great in-game.
+        </p>
+        <p>
+          Over the past decade, I’ve delivered animations for mobile games, casino titles, and
+          interactive experiences, collaborating with international teams and renowned studios.
+          I’m known for my attention to detail, clean animation curves, and ability to handle
+          complete pipelines—from concept to final in-engine implementation.
+        </p>
+        <p>
+          I’ve been recognized multiple times as a top-performing artist and enjoy mentoring
+          junior animators, helping teams hit tight deadlines without compromising on visual
+          quality or performance.
+        </p>
+      </div>
     </div>
   </section>
- <section id="skills" class="section">
-  <h2>Tools & Proficiency</h2>
-  <p class="skill-intro">
-    Here's a quick look at the tools I'm highly experienced with, and the skills I bring to every animation project.
-  </p>
-  <div class="skills-grid">
-    <span class="skill-badge">Spine 2D</span>
-    <span class="skill-badge">After Effects</span>
-    <span class="skill-badge">Photoshop</span>
-    <span class="skill-badge">Illustrator</span>
-    <span class="skill-badge">CorelDRAW</span>
-    <span class="skill-badge">Autodesk Maya</span>
-    <span class="skill-badge">Teamwork</span>
-    <span class="skill-badge">Time Management</span>
-    <span class="skill-badge">Problem Solving</span>
-    <span class="skill-badge">Communication</span>
-  </div>
-</section>
 
-
+  <!-- Contact Section -->
   <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <div class="contact">
-     
-    </div>
-   
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <p class="section-intro">
+        Open to freelance, remote, and full-time roles in game studios, animation houses, and
+        interactive media teams.
+      </p>
 
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Email:</strong> <a href="mailto:sahanik201@gmail.com">sahanik201@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+919601168084">+91 96011 68084</a></p>
+          <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/krishna-kumar-6a3916129/" target="_blank" rel="noopener">
+              linkedin.com/in/krishna-kumar
+            </a>
+          </p>
+          <p class="contact-note">
+            Based in India · Comfortable with remote collaboration across time zones.
+          </p>
+        </div>
 
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:">sahanik201@gmail.com
-      <p><strong>Phone:</strong> <a href="tel:+919601168084">+91 9601168084</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/krishna-kumar-6a3916129/" target="_blank">linkedin.com/in/krishna-kumar</a></p>
+        
+      </div>
     </div>
-    </div>
-  </div>
   </section>
 
+  <!-- Floating Contact Button -->
+  <a href="mailto:sahanik201@gmail.com" class="floating-contact">
+    Contact
+  </a>
 
-  <footer>
-    <p>© 2025 
-        Krishna Kumar. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Krishna Kumar. All rights reserved.</p>
+    </div>
   </footer>
-</body>
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
+
+  <!-- JavaScript -->
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+      navToggle.classList.toggle('open');
     });
-  }, { threshold: 0.1 });
 
-  document.querySelectorAll('.project').forEach(project => {
-    observer.observe(project);
-  });
-</script>
+    // Intersection Observer for project fade-in
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
+    document.querySelectorAll('.project').forEach(project => {
+      observer.observe(project);
+    });
+
+    // Highlight active nav link on scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
 </html>
