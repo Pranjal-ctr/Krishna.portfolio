@@ -540,12 +540,19 @@ body {
 }
 
 .button.secondary {
-  background: rgba(40,40,48,0.9);
-  border: 1px solid rgba(255,255,255,0.15);
+   background:#1c1c21;
+  border:1px solid rgba(255,255,255,0.18);
+  box-shadow:0 0 10px rgba(255,153,0,0.2);
+  color:#fff;
+  transition:0.25s ease;
+   
 }
 
 .button.secondary:hover {
-  background: rgba(60,60,72,0.95);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow:0 0 15px var(--accent-soft);
+  transform:translateY(-2px);
 }
 
 /* Floating Contact Button */
@@ -619,3 +626,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
